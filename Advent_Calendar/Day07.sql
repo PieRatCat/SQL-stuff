@@ -1,9 +1,8 @@
-SELECT  a.vendor_name,
+SELECT a.vendor_name,
         SUM(b.quantity_sold * b.price_per_unit) AS total_revenue
-FROM  vendors AS a LEFT JOIN sales AS b
+FROM vendors AS a LEFT JOIN sales AS b
         ON a.vendor_id = b.vendor_id
 
-GROUP BY a.vendor_id
+GROUP BY a.vendor_name
 ORDER BY total_revenue DESC
-LIMIT 2
-;
+LIMIT 2;

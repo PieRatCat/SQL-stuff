@@ -1,4 +1,4 @@
-SELECT TOP(3)
+SELECT 
 	a.name,
 	COUNT(b.child_id) AS "number of children"
 	
@@ -7,6 +7,5 @@ FROM family_members AS a JOIN parent_child_relationships AS b
 GROUP BY a.name
 ORDER BY COUNT(b.child_id) DESC
 
---in SQL Advent Calendar remove TOP(3) and uncomment the next line
--- LIMIT 3
+LIMIT 3
 ;
