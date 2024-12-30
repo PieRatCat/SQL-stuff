@@ -2,4 +2,4 @@
 
 🎄 [SQL Advent Calendar solutions](Advent_Calendar) 🎄
 
-[Exam project for SQL course](https://github.com/PieRatCat/SQL-stuff/tree/main/SQL_kunskapskontroll)
+[Exam project for SQL course](SQL-stuff\SQL_kunskapskontroll)
